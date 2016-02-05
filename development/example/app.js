@@ -1,2 +1,3 @@
 
-mustard.element("#content","<h1>Hello world</h1>");
+mustard.element("#content","<h1>test</h1>");
+mustard.element(".post","<p>post</p>");
