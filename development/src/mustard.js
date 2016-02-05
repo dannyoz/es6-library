@@ -20,8 +20,20 @@
 		target.innerHTML = content;
 	};
 
-	mustard.route = function(){
-		
+	mustard.navigation = function (parent, list) {
+
+		var item,
+			ref       = parent.substr(1),
+			target    = document.getElementById(ref),
+			markup    = "",
+			listItems = "";
+
+		for (item in list){
+			listItems += '<li><a href="'+list[item]+'">'+item+'</a></li>';
+		}
+
+		markup = "<ul>"+listItems+"</ul>";
+		target.innerHTML = markup;
 	};
 
 })();
